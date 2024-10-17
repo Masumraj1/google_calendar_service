@@ -30,7 +30,7 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-
+the-cultural-ninja-438905-faaf878b7f8a.json
 # Symbolication related
 app.*.symbols
 
