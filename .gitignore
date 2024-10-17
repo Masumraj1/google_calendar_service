@@ -9,6 +9,8 @@
 .history
 .svn/
 migrate_working_dir/
+
+# Ignore the specific JSON file (consider if you want to include or exclude it)
 **/assets/the-cultural-ninja-438905-faaf878b7f8a.json
 
 # IntelliJ related
@@ -17,10 +19,8 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code related
+.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -30,7 +30,12 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
+build/
+
+# Android build related
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
 
 # Symbolication related
 app.*.symbols
@@ -38,7 +43,17 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# iOS related
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+flutter_export_environment.sh
+
+# Android Studio related
+local.properties
+
+# Linux and macOS related
+linux/flutter/ephemeral/
